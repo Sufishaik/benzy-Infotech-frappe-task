@@ -1,0 +1,16 @@
+2024-12-21 00:01:58,210 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for food-order
+2024-12-21 00:01:58,262 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for food-order
+2024-12-21 00:01:58,275 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for food-order
+2024-12-21 00:01:58,281 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for food-order
+2024-12-21 00:01:58,286 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for food-order
+2024-12-21 00:01:58,297 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for food-order
+2024-12-21 00:01:58,311 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for food-order
+2024-12-21 00:01:58,315 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for food-order
+2024-12-21 00:01:58,321 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for food-order
+2024-12-21 00:01:58,331 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for food-order
+2024-12-21 00:01:58,391 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for food-order
+2024-12-21 00:01:58,402 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for food-order
+2024-12-21 00:01:58,407 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for food-order
+2024-12-21 00:01:58,414 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for food-order
+2024-12-21 00:01:58,427 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for food-order
+2024-12-21 00:01:58,433 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for food-order

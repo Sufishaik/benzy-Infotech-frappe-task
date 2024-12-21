@@ -1,0 +1,98 @@
+2024-12-20 20:23:24,767 DEBUG cd frappe-test-bench && python3 -m venv env
+2024-12-20 20:23:27,950 DEBUG cd frappe-test-bench && /home/sufiyan/frappe-test-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-20 20:23:29,614 DEBUG cd frappe-test-bench && /home/sufiyan/frappe-test-bench/env/bin/python -m pip install --quiet wheel
+2024-12-20 20:23:31,308 LOG Getting frappe
+2024-12-20 20:23:31,308 DEBUG cd frappe-test-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-20 20:23:36,733 LOG Installing frappe
+2024-12-20 20:23:36,733 DEBUG cd /home/sufiyan/frappe-test-bench && /home/sufiyan/frappe-test-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sufiyan/frappe-test-bench/apps/frappe 
+2024-12-20 20:24:20,634 DEBUG cd /home/sufiyan/frappe-test-bench/apps/frappe && yarn install --check-files
+2024-12-20 20:25:05,215 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-20 20:25:05,405 DEBUG cd frappe-test-bench && bench build
+2024-12-20 20:25:06,924 INFO /home/sufiyan/.local/bin/bench build
+2024-12-20 20:26:55,613 LOG setting up backups
+2024-12-20 20:26:55,795 LOG backups were set up
+2024-12-20 20:26:55,796 INFO Bench frappe-test-bench initialized
+2024-12-20 20:26:56,281 INFO A newer version of bench is available: 5.22.6 → 5.23.0
+2024-12-20 20:27:50,881 INFO /home/sufiyan/.local/bin/bench new-site food-order
+2024-12-20 20:29:24,456 INFO /home/sufiyan/.local/bin/bench --site food-order add-to-hosts
+2024-12-20 20:30:10,215 INFO /home/sufiyan/.local/bin/bench --site food-order set-config developer_mode 1
+2024-12-20 20:30:42,818 INFO /home/sufiyan/.local/bin/bench get-app --branch version-15 erpnext
+2024-12-20 20:30:43,391 LOG Getting erpnext
+2024-12-20 20:30:43,391 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-20 20:30:49,236 LOG Installing erpnext
+2024-12-20 20:30:49,237 DEBUG cd /home/sufiyan/frappe-test-bench && /home/sufiyan/frappe-test-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sufiyan/frappe-test-bench/apps/erpnext 
+2024-12-20 20:31:00,136 DEBUG cd /home/sufiyan/frappe-test-bench/apps/erpnext && yarn install --check-files
+2024-12-20 20:31:01,537 DEBUG bench build --app erpnext
+2024-12-20 20:31:01,733 INFO /home/sufiyan/.local/bin/bench build --app erpnext
+2024-12-20 20:31:07,944 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-20 20:31:08,177 INFO A newer version of bench is available: 5.22.6 → 5.23.0
+2024-12-20 20:32:08,639 INFO /home/sufiyan/.local/bin/bench --site food-order install-app erpnext
+2024-12-20 20:34:30,095 INFO /home/sufiyan/.local/bin/bench start
+2024-12-20 20:34:30,632 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-20 20:34:30,636 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-20 20:34:30,640 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-20 20:34:30,668 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-20 20:35:41,223 INFO /home/sufiyan/.local/bin/bench migrate
+2024-12-20 20:36:00,579 INFO /home/sufiyan/.local/bin/bench migrate
+2024-12-20 20:40:59,835 INFO /home/sufiyan/.local/bin/bench start
+2024-12-20 20:41:00,653 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-20 20:41:00,701 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-20 20:41:00,703 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-20 20:41:00,704 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-20 20:41:10,860 INFO /home/sufiyan/.local/bin/bench use food-order
+2024-12-20 20:41:23,776 INFO /home/sufiyan/.local/bin/bench start
+2024-12-20 20:41:24,245 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-20 20:41:24,252 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-20 20:41:24,255 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-20 20:41:24,264 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-20 20:46:20,959 INFO /home/sufiyan/.local/bin/bench new-app food-order
+2024-12-20 20:46:21,002 LOG creating new app food_order
+2024-12-20 20:47:00,826 LOG Installing food_order
+2024-12-20 20:47:00,828 DEBUG cd /home/sufiyan/frappe-test-bench && /home/sufiyan/frappe-test-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sufiyan/frappe-test-bench/apps/food_order 
+2024-12-20 20:47:04,509 DEBUG bench build --app food_order
+2024-12-20 20:47:04,636 INFO /home/sufiyan/.local/bin/bench build --app food_order
+2024-12-20 20:47:09,017 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-20 20:47:09,500 INFO A newer version of bench is available: 5.22.6 → 5.23.0
+2024-12-20 20:48:40,762 INFO /home/sufiyan/.local/bin/bench install-app food_order
+2024-12-20 20:48:53,893 INFO /home/sufiyan/.local/bin/bench migrate
+2024-12-20 20:50:01,000 INFO /home/sufiyan/.local/bin/bench install-app food_order
+2024-12-20 20:50:08,747 INFO /home/sufiyan/.local/bin/bench migrate
+2024-12-20 20:50:41,526 INFO /home/sufiyan/.local/bin/bench start
+2024-12-20 20:50:42,720 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-20 20:50:42,776 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-20 20:50:42,867 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-20 20:50:42,918 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-20 23:37:32,409 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:38:24,363 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:38:32,826 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:39:16,633 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:41:30,434 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:42:06,454 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:42:30,107 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:43:02,564 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:43:49,344 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:55:20,734 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-20 23:56:41,983 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:00:04,313 INFO /home/sufiyan/.local/bin/bench --verbose --site all backup
+2024-12-21 00:04:04,307 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:05:01,199 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:06:01,655 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:07:20,314 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:08:13,230 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:11:49,628 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 00:13:37,924 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders
+2024-12-21 11:04:00,770 INFO /home/sufiyan/.local/bin/bench start
+2024-12-21 11:04:01,352 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-21 11:04:01,362 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-21 11:04:01,364 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-21 11:04:01,380 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-21 12:39:42,519 INFO /home/sufiyan/.local/bin/bench restart
+2024-12-21 12:39:42,632 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-21 12:39:42,992 INFO A newer version of bench is available: 5.22.6 → 5.23.0
+2024-12-21 12:39:52,213 INFO /home/sufiyan/.local/bin/bench start
+2024-12-21 12:39:52,650 INFO /home/sufiyan/.local/bin/bench watch
+2024-12-21 12:39:52,657 INFO /home/sufiyan/.local/bin/bench schedule
+2024-12-21 12:39:52,659 INFO /home/sufiyan/.local/bin/bench serve --port 8010
+2024-12-21 12:39:52,669 INFO /home/sufiyan/.local/bin/bench worker
+2024-12-21 14:21:51,156 INFO /home/sufiyan/.local/bin/bench execute apps.food_order.food_order.doctype.food_order.food_order
+2024-12-21 14:22:30,781 INFO /home/sufiyan/.local/bin/bench execute food_order.food_order.doctype.food_order.food_order.fetch_food_orders

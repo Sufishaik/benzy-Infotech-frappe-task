@@ -1,6 +1,0 @@
-set -o pipefail; /usr/bin/mariadb-dump --user=_05f01d8a7a8f5ce1 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f01d8a7a8f5ce1 | /usr/bin/gzip >> ./food-order/private/backups/20241221_000008-food-order-database.sql.gz
-
-Backup Summary for food-order at 2024-12-21 00:01:00.306031
-Config  : ./food-order/private/backups/20241221_000008-food-order-site_config_backup.json 116.0B
-Database: ./food-order/private/backups/20241221_000008-food-order-database.sql.gz         1.1MiB
-Backup for Site food-order has been successfully completed

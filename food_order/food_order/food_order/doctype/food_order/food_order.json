@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-20 20:52:01.245781",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "breakfast",
+  "lunch",
+  "dinner",
+  "column_break_bnfq",
+  "employee_id",
+  "employee_name",
+  "section_break_vjmd",
+  "breakfast_fine",
+  "lunch_fine",
+  "dinner_fine",
+  "column_break_uobr",
+  "total_fine"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Food Order name",
+   "options": "FO-ORD-.YY.-.MM.-.DD.-"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_bnfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "breakfast",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Breakfast",
+   "options": "\nDelivered\nPending\nCanceled\nN/A"
+  },
+  {
+   "fieldname": "lunch",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lunch",
+   "options": "\nDelivered\nPending\nCanceled\nN/A"
+  },
+  {
+   "fieldname": "dinner",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Dinner",
+   "options": "\nDelivered\nPending\nCanceled\nN/A"
+  },
+  {
+   "fieldname": "section_break_vjmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "breakfast_fine",
+   "fieldtype": "Float",
+   "label": "Breakfast Fine"
+  },
+  {
+   "fieldname": "lunch_fine",
+   "fieldtype": "Float",
+   "label": "Lunch Fine"
+  },
+  {
+   "fieldname": "dinner_fine",
+   "fieldtype": "Float",
+   "label": "Dinner Fine"
+  },
+  {
+   "fieldname": "column_break_uobr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_fine",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Fine"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-21 00:12:59.702576",
+ "modified_by": "Administrator",
+ "module": "Food Order",
+ "name": "Food Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
